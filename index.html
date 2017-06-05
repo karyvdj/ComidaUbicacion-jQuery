@@ -3,14 +3,119 @@
   <head lang="es">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>La Comedera</title>
+    <title>Viva la Comida</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/materialize.min.css">
   </head>
   <body>
+    <nav>
+      <div class="nav-wrapper orange accent-4">
+        <a href="#" class="brand-logo center">
+          ¡Viva la comida!
+          <i class="material-icons">cake</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#"><i class="material-icons">info</i></a></li>
+          <li><a href="#"><i class="material-icons">face</i></a></li>
+        </ul>
+      </div>
+    </nav>
 
-    
+    <section class="container">
+      <div class="row">
+        <div id="mapa" class="col m6 s12 offset-m3"> </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="nav-wrapper row">
+        <form class="col m6 s12 offset-m3">
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="container">
+      <article class="row">
+        <div class="card-panel indigo lighten-5 z-depth-1 col m8 s12 offset-m2">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+            </div>
+            <div class="col s8 color-gray">
+              <h4>Pizza del Perro Negro</h4>
+              <h6>Pizzas</h6>
+              <h6>Parque España 3, Roma Nte., 06700 Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="row">
+        <div class="card-panel indigo lighten-5 z-depth-1 col m8 s12 offset-m2">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+            </div>
+            <div class="col s8 color-gray">
+              <h4>Papa Guapa</h4>
+              <h6>Papas</h6>
+              <h6>Calle Orizaba 4, Local B, Cuauhtémoc, Roma Norte, 06700 Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="row">
+        <div class="card-panel indigo lighten-5 z-depth-1 col m8 s12 offset-m2">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+            </div>
+            <div class="col s8 color-gray">
+              <h4>Barracuda Dinner</h4>
+              <h6>Hamburguesas</h6>
+              <h6>Av Nuevo León 4-A, Condesa, 06140 Cuauhtémoc, CDMX</h6>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="row">
+        <div class="card-panel indigo lighten-5 z-depth-1 col m8 s12 offset-m2">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+            </div>
+            <div class="col s8 color-gray">
+              <h4>Moshi Moshi</h4>
+              <h6>Sushi</h6>
+              <h6>Plaza Villa de Madrid 22, Cuauhtémoc, Roma, 06700 Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="row">
+        <div class="card-panel indigo lighten-5 z-depth-1 col m8 s12 offset-m2">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+            </div>
+            <div class="col s8 color-gray">
+              <h4>Churrería El Moro</h4>
+              <h6>Churros y chocolate</h6>
+              <h6>Eje Central Lázaro Cárdenas 42, Centro Histórico, Centro, 06000 Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyYqB_J81Vv4y9O2M4x5xzWqTsOArXjbM &callback=initMap"></script>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/materialize.min.js"></script>
