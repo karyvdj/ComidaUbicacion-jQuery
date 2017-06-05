@@ -1,5 +1,5 @@
-# Localizacion de comida "yumyum.mx"
-### Versión 0.1.0 
+# Localización de comida "yumyum.mx"
+### Versión 0.1.0
 * Maquetar la estructura de la app, elementos mínimos requeridos: mapa, búsqueda, lista de restaurantes.
 * Mostrar el mapa en la posición actual del usuario al iniciar la web app.
 ### Versión 0.2.0

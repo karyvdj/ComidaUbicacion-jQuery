@@ -27,31 +27,31 @@ var restaurantes = [
 	{
 		"nombre": "Pizzas del Perro Negro",
 		"comida": "Pizzas",
-		"foto": "http://via.placeholder.com/200x200",
+		"foto": "assets/img/pizza.jpg",
 		"direccion": "Calle Orizaba 4, Local B, Cuauhtémoc, Roma Norte, 06700 Ciudad de México, CDMX"
 	},
 	{
 		"nombre": "Papa Guapa",
 		"comida": "Papas",
-		"foto": "http://via.placeholder.com/200x200",
+		"foto": "assets/img/papa.jpg",
 		"direccion": "Calle Orizaba 4, Local B, Cuauhtémoc, Roma Norte, 06700 Ciudad de México, CDMX"
 	},
 	{
 		"nombre": "Barracuda Dinner",
 		"comida": "Hamburguesas",
-		"foto": "http://via.placeholder.com/200x200",
+		"foto": "assets/img/barracuda.jpg",
 		"direccion": "Av Nuevo León 4-A, Condesa, Cuauhtémoc, 06140 Ciudad de México, CDMX."
 	},
 	{
 		"nombre": "Moshi Moshi",
 		"comida": "Sushi",
-		"foto": "http://via.placeholder.com/200x200",
+		"foto": "assets/img/moshi.jpg",
 		"direccion": "Plaza Villa de Madrid 22, Cuauhtémoc, Roma, 06700 Ciudad de México, CDMX."
 	},
 	{
 		"nombre": "Churrería El Moro",
 		"comida": "Churros y chocolate",
-		"foto": "http://via.placeholder.com/200x200",
+		"foto": "assets/img/churros.jpg",
 		"direccion": "Eje Central Lázaro Cárdenas 42, Centro Histórico, Centro, 06000 Ciudad de México, CDMX"
 	}
 ];
@@ -59,8 +59,8 @@ var restaurantes = [
 var plantillaRestaurantes = "<article class='row'>"+
 			"<div class='card-panel indigo lighten-5 z-depth-1 col m8 s12 offset-m2'>"+
 				"<div class='row valign-wrapper'>" +
-					"<div class='col s2'>"+
-						"<img src='__foto__' alt='Contact' class='circle responsive-img'>"+
+					"<div class='col s3'>"+
+						"<img src='__foto__' alt='Contact' class='fotoRestaurante responsive-img'>"+
 						"</div>"+
 						"<div class='col s8 color-gray'>"+
 							"<h4>__nombre__</h4>"+
