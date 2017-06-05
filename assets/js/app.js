@@ -1,16 +1,26 @@
-function initMap(){
-
-    var localizacionActual = {lat: 19.4176437, lng: -99.167004};
-
-    var map = new google.maps.Map(document.getElementById('mapa'),{
-    zoom: 15,
-    center:localizacionActual
+var obtenerUbicacion = function (e) {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(mostrarPosicion);
+    } else {
+        alert("Actualice su navegador");
+    }
+};
+var mostrarPosicion = function (posicion) {
+    var coordenadas = {
+        lat: posicion.coords.latitude,
+        lng: posicion.coords.longitude
+    };
+    mostrarMapa(coordenadas);
+};
+var mostrarMapa = function (coordenadas) {
+    var map = new google.maps.Map($('.mapa')[0], {
+      zoom: 15,
+      center: coordenadas
     });
-
-		var marker = new google.maps.Marker({
-		 position:localizacionActual,
-		 map: map
-	 });
+    var marker = new google.maps.Marker({
+      position: coordenadas,
+      map: map
+    });
 }
 
 var restaurantes = [
@@ -71,11 +81,11 @@ var filtrarRestaurantes = function (e) {
 	var nombreFiltrados = restaurantes.filter(function (restaurante) {
 		return restaurante.nombre.toLowerCase().indexOf(busqueda) >= 0;
 	});
-	var comidaFiltrados = restaurantes.filter(function (restaurante) {
-		return restaurante.comida.toLowerCase().indexOf(busqueda) >= 0;
-	});
+	// var comidaFiltrados = restaurantes.filter(function (restaurante) {
+	// 	return restaurante.comida.toLowerCase().indexOf(busqueda) >= 0;
+	// });
 	mostrarRestaurantes(nombreFiltrados);
-	mostrarRestaurantes(comidaFiltrados);
+	// mostrarRestaurantes(comidaFiltrados);
 };
 
 var mostrarRestaurantes = function (restaurantes) {
