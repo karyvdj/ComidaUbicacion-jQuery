@@ -8,5 +8,7 @@
 .fotoRestaurante{
   width: 100%;
   border-radius: 5px;
-  
+}
+.ubicacion-restaurante{
+  cursor: pointer;
 }
