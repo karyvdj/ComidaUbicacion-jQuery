@@ -84,14 +84,14 @@ var restaurantes = [
 var plantillaRestaurantes = "<article class='row'>"+
 			"<div class='card-panel indigo lighten-5 z-depth-1 col m8 offset-m2'>"+
 				"<div class='row valign-wrapper'>" +
-					"<div class='col s4'>"+
+					"<div class='col s3'>"+
 						"<img src='__foto__' alt='Contact' class='fotoRestaurante responsive-img'>"+
 						"</div>"+
 						"<div class='col s8 color-gray'>"+
 							"<h4>__nombre__</h4>"+
 							"<h6>__comida__</h6>"+
 							"<h6>__direccion__</h6>"+
-              "<a class='btn-floating btn-small waves-effect waves-light orange ubicacion-restaurante' data-latitud ='__latitud__' data-longitud = '__longitud__'>" +
+              "<a href='#mapa' class='btn-floating btn-small waves-effect waves-light orange ubicacion-restaurante' data-latitud ='__latitud__' data-longitud = '__longitud__'>" +
                 "<i class='material-icons'>place</i>" +
               "</a>" +
 						"</div>"+
